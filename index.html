@@ -529,13 +529,13 @@
   <!-- ===============================================-->
   <!--    JavaScripts-->
   <!-- ===============================================-->
-  <script src="<?= base_url('doc/public'); ?>/vendors/@popperjs/popper.min.js"></script>
-  <script src="<?= base_url('doc/public'); ?>/vendors/bootstrap/bootstrap.min.js"></script>
-  <script src="<?= base_url('doc/public'); ?>/vendors/is/is.min.js"></script>
-  <script src="<?= base_url('doc/public'); ?>/https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
-  <script src="<?= base_url('doc/public'); ?>/https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
-  <script src="<?= base_url('doc/public'); ?>/vendors/fontawesome/all.min.js"></script>
-  <script src="<?= base_url('doc/public'); ?>/assets/js/theme.js"></script>
+  <script src="vendors/@popperjs/popper.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="vendors/is/is.min.js"></script>
+  <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script src="vendors/fontawesome/all.min.js"></script>
+  <script src="js/theme.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
@@ -546,25 +546,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&amp;display=swap" rel="stylesheet">
 
   <script>
-    // $(document).ready(function() {
-    //   $('hvcapp').mouseover(function() {
-    //     // $('#collapseExample').show();
-    //     // $(".collapse").collapse('toggle');
-
-    //   });
-
-    //   $('hvcapp').mouseout(function() {
-    //     $(this).click();
-    //   });
-    // });
-
-
-    // $('#tes').mouseover(function() {
-    //   //     // $('#collapseExample').show();
-    //   //     // $(".collapse").collapse('toggle');
-
-    // });
-
     function showApp() {
       var myCollapse = document.getElementById('one')
       var bsCollapse = new bootstrap.Collapse(one, {
@@ -598,22 +579,9 @@
   </script>
 
   <script>
-    // const pulses = gsap.timeline({
-    //     defaults: {
-    //       duration: 0.05,
-    //       autoAlpha: 1,
-    //       // scale: 2,
-    //       transformOrigin: 'center',
-    //       // ease: "elastic(2.5, 1)"
-    //     }
-    //   })
-    //   .to(".cls-1, .cls-3", {}, 0.2)
-    // .to(".ball03, .text02", {}, 0.33)
     gsap.set('#ball', {
-      // rotation: -36,
       transformOrigin: 'center'
     });
-
 
     gsap.to(".cls-0", {
       scrollTrigger: {
@@ -624,13 +592,6 @@
         end: "bottom center",
 
       },
-
-      // duration: 5,
-      // repeat: 12,
-      // repeatDelay: 3,
-      // yoyo: true,
-      // ease: "power1.inOut",
-      // ease: 'none',
       motionPath: {
         path: ".cls-1",
         align: ".cls-1",
@@ -641,41 +602,18 @@
 
     });
 
-    // .to(".ball04, .text03", {}, 0.46)
-
-
-    // gsap.from("#p2021", {
-    //   scrollTrigger: {
-    //     trigger: "#p2021",
-    //     toggleActions: "play none none reverse",
-    //     // scrub: .001,
-    //     // scrub: .01,
-    //     start: "-120px center",
-    //     end: "bottom center",
-    //     // markers: true,
-    //   },
-    //   // y: 100,
-    //   opacity: 0,
-    //   // ease: "back",
-    //   // duration: .6
-    // });
-
-    // ##
-
     gsap.from("#ep2022", {
       scrollTrigger: {
         trigger: "#ep2022",
         toggleActions: "play none none reverse",
         start: "-78 center",
         end: "-78 center",
-        // markers: true,
       },
       opacity: 0,
       scale: -1,
       duration: .2,
       scrub: true,
       transformOrigin: "50% 50%",
-      // alignOrigin: [0.5, 0.5],
     });
 
     gsap.from("#vp2022", {
@@ -687,7 +625,6 @@
       },
       transformOrigin: "50% 50%",
       rotation: 180,
-      // delay: .1,
       opacity: 0,
     });
 
@@ -700,7 +637,6 @@
       },
       scaleX: 0,
       transformOrigin: "left",
-      // rotation: 180,
       delay: .1,
       opacity: 0,
     });
@@ -714,10 +650,6 @@
       },
       opacity: 0,
     });
-
-
-    // ###
-
 
     gsap.from("#ep2021", {
       scrollTrigger: {
@@ -767,10 +699,6 @@
       },
       opacity: 0,
     });
-
-
-    // ##
-
 
     gsap.from("#ep2020", {
       scrollTrigger: {
@@ -822,9 +750,6 @@
       opacity: 0,
     });
 
-    // ##
-
-
     gsap.from("#ep2020b", {
       scrollTrigger: {
         trigger: "#ep2020b",
@@ -874,34 +799,6 @@
       },
       opacity: 0,
     });
-
-
-    // ##
-
-
-
-
-
-    // gsap.from("#p2020", {
-    //   scrollTrigger: {
-    //     trigger: "#p2020",
-    //     toggleActions: "play none none reverse",
-    //     start: "-160 center",
-    //     end: "bottom center",
-    //     // markers: true,
-    //   },
-    //   opacity: 0,
-    // });
-    // gsap.from("#p2020b", {
-    //   scrollTrigger: {
-    //     trigger: "#p2020b",
-    //     toggleActions: "play none none reverse",
-    //     start: "-160 center",
-    //     end: "bottom center",
-    //     // markers: true,
-    //   },
-    //   opacity: 0,
-    // });
   </script>
 
 
