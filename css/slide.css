@@ -1,0 +1,42 @@
+.horizSlider {
+  position: relative;
+  white-space: nowrap;
+  overflow: auto;
+}
+.horizSlider .slide {
+  display: inline-block;
+  position: relative;
+}
+.slideText {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  z-index: 1;
+  font-size: 3em;
+  font-weight: 400;
+}
+.slideImage {
+  transform-origin: bottom left;
+}
+
+
+
+svg{
+  height:100vh;
+  position:absolute;
+}
+
+#lines{
+  filter: drop-shadow(0px -5px 15px #ffce00);
+}
+
+#text{
+  filter: drop-shadow(9px 5px 10px #5f5f5f);
+}
+
+.star{
+  visibility:hidden;
+}
