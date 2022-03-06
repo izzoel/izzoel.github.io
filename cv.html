@@ -38,27 +38,38 @@
   <!--    Main Content-->
   <!-- ===============================================-->
   <main class="main" id="top">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+
+      <a href="<?= base_url('doc/public'); ?>/assets/doc/CV_Zulfahmi_Ramadhani.pdf" download class="d-lg-none ms-2 me-2">
+        <img src="<?= base_url('doc/public'); ?>/assets/img/cv/pdf.png" alt="CV.pdf">
+        CV.pdf
+      </a>
+
+      <a href="<?= base_url('doc/public'); ?>/assets/doc/Portofolio_Zulfahmi_Ramadhani.pdf" download class="d-lg-none">
+        <img src="<?= base_url('doc/public'); ?>/assets/img/cv/pdf.png" alt="Portofolio.pdf">
+        Portofolio.pdf
+      </a>
       <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-         <div class="row">
-          <div class="col-auto">
-            <img src="img/pdf.png" alt="CV.pdf">
-            <a href="doc/CV_Zulfahmi_Ramadhani.pdf" download>CV.pdf</a>
-          </div>
-          <div class="col">
-            <img src="img/pdf.png" alt="Portofolio.pdf">
-            <a href="doc/Portofolio_Zulfahmi_Ramadhani.pdf" download> Portofolio.pdf</a>
-          </div>
-        </div>
+        <a href="<?= base_url('doc/public'); ?>/assets/doc/CV_Zulfahmi_Ramadhani.pdf" download class="d-none d-lg-block ms-2 me-3">
+          <img src="<?= base_url('doc/public'); ?>/assets/img/cv/pdf.png" alt="CV.pdf">
+          CV.pdf
+        </a>
+        <a href="<?= base_url('doc/public'); ?>/assets/doc/Portofolio_Zulfahmi_Ramadhani.pdf" download class="d-none d-lg-block ms-3">
+          <img src="<?= base_url('doc/public'); ?>/assets/img/cv/pdf.png" alt="Portofolio.pdf">
+          Portofolio.pdf
+        </a>
         <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
           <li class="nav-item px-2"><a class="nav-link" href="index">Home</a></li>
-          <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="index#skill">Skill</a></li>
-          <li class="nav-item px-2"><a class="nav-link" href="index#cv">CV</a></li>
-          <li class="nav-item px-2"><a class="nav-link" href="index#about">About</a></li>
-          <li class="nav-item px-2"><a class="nav-link" href="index#projects">Projects</a></li>
+          <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="home/#skill">Skill</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="home/#cv">CV</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="home/#about">About</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="home/#projects">Projects</a></li>
         </ul>
-      </div>
+
       </div>
     </nav>
 
